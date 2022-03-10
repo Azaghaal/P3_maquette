@@ -90,6 +90,71 @@ body
     }
 }
 
+/*section working*/
+.working 
+{
+    padding: 40px 0;
+}
+
+.working__heading
+{
+    margin: 0 0 30px 10px;
+}
+
+.working-cards
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.working-card
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+    width: 90%;
+    margin: auto;
+    &__number {
+        padding: 10px;
+        border-radius: 20px;
+        background-color: $primary-colour;
+        margin: 0 20px 0 -30px;
+        color: white;
+    }
+    &__logo {
+        margin-right: 20px;
+    }
+    &:hover
+    {
+        background-color: #f4edfe;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*cards*/
 .card__image img
 {
