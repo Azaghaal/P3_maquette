@@ -1,18 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+$primary-colour: #9356DC;
+$secondary-colour: #FF79DA;
+$tertiary-colour: #99E2D0;
+
+/*general*/
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading
+{
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-heading
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.restaurant-heading
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: xx-large;
+}
+
+.btn
+{
+    background-image: linear-gradient(170deg, $secondary-colour, $primary-colour);
+    padding: 20px 0;
+    width: 250px;
+    margin: auto;
+    border-radius: 30px;
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}
 
 /*header*/
-.header__img
+.header 
 {
-    width: 200px;
+    padding: 30px 0 15px 0;
+    box-shadow: 3px 3px 3px black;
+    &__img {
+        width: 200px;
+        margin: auto;
+        display: block;
+    }
 }
 
 .location
 {
-    display: flex;
-    align-items: center;
+    padding: 20px;
+    background-color: #eaeaea;
 }
 
+.loc-city
+{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 150px;
+    &__logo {
+        margin-right: 10px;
+    }
+}
 
-
+.explore
+{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 40px 0;
+    &__heading {
+        margin-bottom: 20px;
+    }
+    &__p {
+        margin-bottom: 30px;
+    }
+}
 
 /*cards*/
 .card__image img
