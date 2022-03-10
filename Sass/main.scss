@@ -195,3 +195,24 @@ body
     }
 }
 
+/*footer*/
+.footer
+{
+    background-color: #353535;
+    padding: 30px;
+    &__heading {
+        color: white;
+        font-family: 'Shrikhand', cursive;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        color: white;
+        &--flex {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

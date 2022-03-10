@@ -210,4 +210,35 @@ body {
 .card-body h3 {
   margin-bottom: 5px;
 }
+
+/*footer*/
+.footer {
+  background-color: #353535;
+  padding: 30px;
+}
+
+.footer__heading {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  color: white;
+}
+
+.footer__list--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
 /*# sourceMappingURL=main.css.map */
