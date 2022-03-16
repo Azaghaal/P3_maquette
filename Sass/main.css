@@ -411,13 +411,6 @@ body {
   transition: margin-right 1s;
 }
 
-.menu-card__check--rotate {
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
-}
-
 .menu-card:hover .menu-card__check {
   margin-right: 0;
   -webkit-transition: margin-right 1s;
@@ -425,6 +418,10 @@ body {
 }
 
 .menu-card:hover .menu-card__check--rotate {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
   -webkit-transform: rotate(720deg);
           transform: rotate(720deg);
 }

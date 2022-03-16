@@ -264,14 +264,12 @@
         color: white;
         margin-right: -60px;
         transition: margin-right 1s;
-        &--rotate {
-            transition: transform 0.7s;
-        }
     }
     &:hover .menu-card__check {
         margin-right: 0;
         transition: margin-right 1s;
         &--rotate {
+            transition: transform 0.7s;
             transform: rotate(720deg); 
         }
     }
