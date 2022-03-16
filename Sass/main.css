@@ -377,18 +377,56 @@ body {
 
 .menu-card {
   background-color: white;
-  padding: 10px;
   border-radius: 20px;
   width: 90%;
-}
-
-.menu-card__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  overflow: hidden;
+}
+
+.menu-card__content {
+  padding: 10px;
+}
+
+.menu-card__price {
+  margin-left: auto;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.menu-card__check {
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding: 20px;
+  color: white;
+  margin-right: -60px;
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
+}
+
+.menu-card__check--rotate {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+.menu-card:hover .menu-card__check {
+  margin-right: 0;
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
+}
+
+.menu-card:hover .menu-card__check--rotate {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
 }
 
 .menu .btn {
