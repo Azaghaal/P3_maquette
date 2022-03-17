@@ -6,14 +6,14 @@
     border-radius: 30px;
     text-align: center;
     border: none;
-    box-shadow: 3px 3px 3px #c7c7c7ff;
+    box-shadow: 3px 3px 8px #c7c7c7ff;
     &__link {
         text-decoration: none;
         color: white;
         padding: 20px;
     }
     &:hover {
-        box-shadow: 3px 3px 3px #979797;
+        box-shadow: 3px 3px 8px #979797;
         filter: brightness(110%);
     }
 }
