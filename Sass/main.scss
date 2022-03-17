@@ -46,12 +46,15 @@
 {
     color: #9356DC;
     font-family: 'Shrikhand', cursive;
-    font-size: 80px;
+    font-size: 40px;
     letter-spacing: 15px;
     margin-bottom: 150px;
     animation: flash 1s;
     animation-iteration-count: 2;
     transform: scale(1);
+    @include desktop-only {
+        font-size: 80px;
+    }
 }
 
 @keyframes flash {
