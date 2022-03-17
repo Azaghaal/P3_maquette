@@ -232,6 +232,7 @@
     }
     &__headings {
         margin: 20px;
+        font-weight: 300;
     }
 }
 
@@ -256,9 +257,10 @@
     width: 90%;
     display: flex;
     overflow: hidden;
+    box-shadow: 3px 3px 8px #c7c7c7ff;;
     cursor: pointer;
     &__content {
-        padding: 10px;
+        padding: 10px 10px 10px 15px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -266,11 +268,14 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            margin-bottom: 10px;
+            font-weight: 500;
         }
         &--p {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            font-weight: 300;
         }
     }
     &__price {
@@ -279,8 +284,12 @@
         display: flex;
         align-items: flex-end;
         padding-bottom: 10px;
+        font-weight: 500;
     }
     &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: $tertiary-colour;
         border-radius: 0 20px 20px 0;
         padding: 20px;

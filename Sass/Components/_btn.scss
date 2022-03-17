@@ -18,11 +18,14 @@
     }
 }
 
-.menu__btn 
+.menu-btn 
 {
     display: flex;
     margin: 30px auto auto auto;
     padding: 0;
+    &__link {
+        padding: 20px 50px;
+    }
 }
 
 
