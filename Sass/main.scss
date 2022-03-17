@@ -180,6 +180,11 @@
     }
 }
 
+.heart-empty 
+{
+    cursor: pointer;
+}
+
 .heart-empty:hover
 {
     font-weight: bold;
@@ -250,6 +255,7 @@
     width: 90%;
     display: flex;
     overflow: hidden;
+    cursor: pointer;
     &__content {
         padding: 10px;
         overflow: hidden;

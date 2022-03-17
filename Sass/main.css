@@ -59,14 +59,19 @@ body {
           flex-direction: column;
   gap: 10px;
   margin-top: 20px;
-  color: white;
 }
 
-.footer__list--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
+.footer__list--logo1 {
+  margin-right: 7px;
+}
+
+.footer__list--logo2 {
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+.footer a {
+  color: white;
 }
 
 /*header*/
@@ -290,6 +295,10 @@ body {
   margin-bottom: 5px;
 }
 
+.heart-empty {
+  cursor: pointer;
+}
+
 .heart-empty:hover {
   font-weight: bold;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
@@ -386,6 +395,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .menu-card__content {
