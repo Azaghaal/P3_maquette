@@ -2,14 +2,27 @@
 {
     background-image: linear-gradient(170deg, $secondary-colour, $primary-colour);
     padding: 20px 0;
-    width: 250px;
     margin: auto;
     border-radius: 30px;
     text-align: center;
+    border: none;
+    box-shadow: 3px 3px 3px #c7c7c7ff;
     &__link {
         text-decoration: none;
         color: white;
+        padding: 20px;
     }
+    &:hover {
+        box-shadow: 3px 3px 3px #979797;
+        filter: brightness(110%);
+    }
+}
+
+.menu__btn 
+{
+    display: flex;
+    margin: 30px auto auto auto;
+    padding: 0;
 }
 
 
