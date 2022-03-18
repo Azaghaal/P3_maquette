@@ -381,6 +381,8 @@
     overflow: hidden;
     box-shadow: 3px 3px 8px #c7c7c7ff;;
     cursor: pointer;
+    opacity: 0;
+    animation: menuappearance 2s forwards, menuscale 2s forwards;
     &__content {
         padding: 10px 10px 10px 15px;
         overflow: hidden;
@@ -429,8 +431,45 @@
     }
 }
 
+@keyframes menuappearance {
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
 
+.menu-card:nth-child(1)
+{
+    animation-delay: 0.1s;
+}
+
+.menu-card:nth-child(2)
+{
+    animation-delay: 0.3s;
+}
+
+.menu-card:nth-child(3)
+{
+    animation-delay: 0.5s;
+}
+
+.menu-card:nth-child(4)
+{
+    animation-delay: 0.7s;
+}
+
+@keyframes menuscale {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 

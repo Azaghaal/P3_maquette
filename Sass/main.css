@@ -603,6 +603,9 @@ body {
   -webkit-box-shadow: 3px 3px 8px #c7c7c7ff;
           box-shadow: 3px 3px 8px #c7c7c7ff;
   cursor: pointer;
+  opacity: 0;
+  -webkit-animation: menuappearance 2s forwards, menuscale 2s forwards;
+          animation: menuappearance 2s forwards, menuscale 2s forwards;
 }
 
 .menu-card__content {
@@ -672,5 +675,65 @@ body {
   transition: transform 0.7s, -webkit-transform 0.7s;
   -webkit-transform: rotate(720deg);
           transform: rotate(720deg);
+}
+
+@-webkit-keyframes menuappearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menuappearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu-card:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.menu-card:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.menu-card:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.menu-card:nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+@-webkit-keyframes menuscale {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes menuscale {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
