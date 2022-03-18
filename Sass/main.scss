@@ -392,6 +392,30 @@
     height: 250px;
     position: relative;
     z-index: -1;
+    @include desktop-only {
+        height: 25vw;
+        max-height: 400px;
+    }
+}
+
+.menu-flex
+{
+    @include desktop-only {
+        display: flex;
+        flex-wrap: wrap;
+        &__block {
+            width: 50%;
+        }
+        &__dessert {
+            margin: 20px auto 0 auto;
+        }
+    }
+}
+
+.menu-position
+{
+    max-width: 1440px;
+    margin: auto;
 }
 
 .border-bottom

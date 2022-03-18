@@ -55,6 +55,12 @@ body {
   padding: 20px 40px;
 }
 
+@media screen and (min-width: 992px) {
+  .menu-btn {
+    margin: 50px auto 20px auto;
+  }
+}
+
 .footer {
   background-color: #353535;
   padding: 30px;
@@ -613,6 +619,34 @@ body {
   height: 250px;
   position: relative;
   z-index: -1;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    height: 25vw;
+    max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu-flex__block {
+    width: 50%;
+  }
+  .menu-flex__dessert {
+    margin: 20px auto 0 auto;
+  }
+}
+
+.menu-position {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .border-bottom {

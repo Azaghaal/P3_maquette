@@ -20,6 +20,9 @@
     display: flex;
     margin: 30px auto auto auto;
     padding: 20px 40px;
+    @include desktop-only {
+        margin: 50px auto 20px auto;
+    }
 }
 
 
