@@ -190,6 +190,12 @@
 }
 
 /*section working*/
+.working-position
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
 .working 
 {
     padding: 40px 0;
@@ -205,6 +211,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 20px;
     @include desktop-only {
         flex-direction: row;
     }
@@ -219,6 +226,7 @@
     background-color: $background-soft;
     width: 90%;
     margin: auto;
+    box-shadow: 3px 3px 8px #c7c7c7ff;
     &__number {
         padding: 5px 9px;
         border-radius: 20px;
@@ -234,11 +242,17 @@
         background-color: #f4edfe;
     }
     @include desktop-only {
-        width: 30%;
+        width: 32%;
     }
 }
 
 /*section restaurants*/
+.section-position
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
 .restaurants 
 {
     background-color: $background-soft;
@@ -265,6 +279,7 @@
     width: 90%;
     margin: auto;
     border-radius: 20px;
+    box-shadow: 3px 3px 8px #c7c7c7ff;
     & a {
         text-decoration: none;
         color: black;
@@ -295,6 +310,9 @@
         width: 100%;
         max-height: 225px;
         border-radius: 20px 20px 0 0;
+    }
+    @include desktop-only {
+        height: 70%;
     }
 }
 

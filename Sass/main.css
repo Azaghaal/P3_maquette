@@ -90,6 +90,11 @@ body {
   color: white;
 }
 
+.footer-position {
+  max-width: 1440px;
+  margin: auto;
+}
+
 /*page loader*/
 #loader {
   position: fixed;
@@ -339,6 +344,11 @@ body {
 }
 
 /*section working*/
+.working-position {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .working {
   padding: 40px 0;
 }
@@ -356,6 +366,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -379,6 +390,8 @@ body {
   background-color: #f6f6f6;
   width: 90%;
   margin: auto;
+  -webkit-box-shadow: 3px 3px 8px #c7c7c7ff;
+          box-shadow: 3px 3px 8px #c7c7c7ff;
 }
 
 .working-card__number {
@@ -399,11 +412,16 @@ body {
 
 @media screen and (min-width: 992px) {
   .working-card {
-    width: 30%;
+    width: 32%;
   }
 }
 
 /*section restaurants*/
+.section-position {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding: 40px 0;
@@ -444,6 +462,8 @@ body {
   width: 90%;
   margin: auto;
   border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 8px #c7c7c7ff;
+          box-shadow: 3px 3px 8px #c7c7c7ff;
 }
 
 .card a {
@@ -481,6 +501,12 @@ body {
   width: 100%;
   max-height: 225px;
   border-radius: 20px 20px 0 0;
+}
+
+@media screen and (min-width: 992px) {
+  .card-image {
+    height: 70%;
+  }
 }
 
 .card-body {
