@@ -14,6 +14,7 @@ body {
 
 .heading {
   font-size: xx-large;
+  font-weight: 700;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -37,6 +38,7 @@ body {
   -webkit-box-shadow: 3px 3px 8px #c7c7c7ff;
           box-shadow: 3px 3px 8px #c7c7c7ff;
   color: white;
+  font-size: large;
   cursor: pointer;
 }
 
@@ -327,6 +329,7 @@ body {
   border: none;
   background-color: #eaeaea;
   max-width: 200px;
+  font-size: large;
 }
 
 .explore {
@@ -341,6 +344,7 @@ body {
 
 .explore__p {
   margin-bottom: 30px;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 992px) {
@@ -360,7 +364,7 @@ body {
 }
 
 .working__heading {
-  margin: 0 0 30px 10px;
+  margin: 0 0 30px 20px;
 }
 
 .working-cards {
@@ -371,7 +375,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding: 0 20px;
 }
 
@@ -410,10 +414,20 @@ body {
 
 .working-card__logo {
   margin-right: 20px;
+  color: gray;
+}
+
+.working-card__p {
+  font-size: large;
+  font-weight: 500;
 }
 
 .working-card:hover {
   background-color: #f4edfe;
+}
+
+.working-card:hover .working-card__logo {
+  color: #9356DC;
 }
 
 @media screen and (min-width: 992px) {
@@ -434,7 +448,7 @@ body {
 }
 
 .restaurants__heading {
-  margin: 0 0 30px 10px;
+  margin: 0 0 30px 20px;
 }
 
 .restaurants__cards {
@@ -498,6 +512,7 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
+  font-weight: 500;
 }
 
 .card-image img {
@@ -530,10 +545,16 @@ body {
 
 .card-body h3 {
   margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.card-body__p {
+  font-weight: 300;
 }
 
 .heart-empty {
   cursor: pointer;
+  font-size: x-large;
 }
 
 .heart-empty:hover {
