@@ -1,0 +1,33 @@
+.heart-empty 
+{
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.heart-empty:hover
+{
+    font-weight: bold;
+    background-image: linear-gradient(170deg, $secondary-colour, $primary-colour);
+    background-clip: text;
+    color: transparent;
+    animation: color 1s ease forwards;
+}
+
+.heart-empty:active
+{
+    font-weight: bold;
+    background-image: linear-gradient(170deg, $secondary-colour, $primary-colour);
+    background-clip: text;
+    color: transparent;
+    animation: color 1s ease forwards;
+}
+
+@keyframes color {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

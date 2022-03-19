@@ -1,0 +1,15 @@
+.header 
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    &__img {
+        width: 200px;
+        margin: auto;
+        display: block;
+    }
+    &__link {
+        position: absolute;
+        font-size: x-large;
+    }
+}

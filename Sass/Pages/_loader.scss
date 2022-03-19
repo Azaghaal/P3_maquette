@@ -1,0 +1,120 @@
+/*page loader*/
+#loader
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    animation: visibility 3.1s ease forwards;
+    z-index: 10;
+}
+
+@keyframes visibility {
+    0% {
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+    }
+
+    99% {
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0%;
+        width: 0%;
+    }
+}
+
+
+.lettre
+{
+    color: #9356DC;
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1s;
+    animation-iteration-count: 2;
+    transform: scale(1);
+    @include desktop-only {
+        font-size: 80px;
+    }
+}
+
+@keyframes flash {
+    0% {
+        color: #9356DC;
+        text-shadow: 0 0 7px #9356DC;
+        transform: scale(1.2);
+    }
+    90% {
+        color: #FF79DA;
+        text-shadow: none;
+    }
+    100% {
+        color: #99E2D0;
+        text-shadow: 0 0 7px #99E2D0;
+    }
+}
+
+.lettre:nth-child(1)
+{
+    animation-delay: 0.1s;
+}
+.lettre:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+.lettre:nth-child(3)
+{
+    animation-delay: 0.3s;
+}
+.lettre:nth-child(4)
+{
+    animation-delay: 0.4s;
+}
+.lettre:nth-child(5)
+{
+    animation-delay: 0.5s;
+}
+.lettre:nth-child(6)
+{
+    animation-delay: 0.6s;
+}
+.lettre:nth-child(7)
+{
+    animation-delay: 0.7s;
+}
+.lettre:nth-child(8 )
+{
+    animation-delay: 0.8s;
+}
+
+
+#page 
+{
+    opacity: 0.1;
+    animation: visibility2 3.1s ease forwards;
+}
+
+@keyframes visibility2 {
+    0% {
+        opacity: 0.8;
+    }
+
+    99% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
