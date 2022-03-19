@@ -142,6 +142,7 @@
     }
     &__link {
         position: absolute;
+        font-size: x-large;
     }
 }
 
@@ -396,7 +397,7 @@
         gap: 20px;
     }
     &__headings {
-        margin: 20px;
+        margin: 20px 20px 30px 20px;
         font-weight: 300;
     }
 }
@@ -437,6 +438,7 @@
 .border-bottom
 {
     border-bottom: 3px solid $tertiary-colour;
+    padding-bottom: 5px;
 }
 
 .menu-card
@@ -460,7 +462,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             margin-bottom: 10px;
-            font-weight: 500;
+            font-weight: 700;
         }
         &--p {
             overflow: hidden;
@@ -485,8 +487,9 @@
         border-radius: 0 20px 20px 0;
         padding: 20px;
         color: white;
-        margin-right: -60px;
+        margin-right: -64px;
         transition: margin-right 1s;
+        font-size: x-large;
     }
     &:hover .menu-card__check {
         margin-right: 0;
