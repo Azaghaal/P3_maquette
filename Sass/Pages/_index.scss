@@ -55,11 +55,9 @@
 .working 
 {
     padding: 40px 0;
-}
-
-.working__heading
-{
-    margin: 0 0 30px 20px;
+    &__heading {
+        margin: 0 0 30px 20px;
+    }
 }
 
 .working-cards

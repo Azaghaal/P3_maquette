@@ -28,6 +28,49 @@ body {
   font-size: xx-large;
 }
 
+.heart-empty {
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.heart-empty:hover {
+  font-weight: bold;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: color 1s ease forwards;
+          animation: color 1s ease forwards;
+}
+
+.heart-empty:active {
+  font-weight: bold;
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: color 1s ease forwards;
+          animation: color 1s ease forwards;
+}
+
+@-webkit-keyframes color {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn {
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   padding: 20px;
@@ -61,6 +104,27 @@ body {
   .menu-btn {
     margin: 50px auto 20px auto;
   }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.header__img {
+  width: 200px;
+  margin: auto;
+  display: block;
+}
+
+.header__link {
+  position: absolute;
+  font-size: x-large;
 }
 
 .footer {
@@ -284,28 +348,7 @@ body {
   }
 }
 
-/*header*/
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-}
-
-.header__img {
-  width: 200px;
-  margin: auto;
-  display: block;
-}
-
-.header__link {
-  position: absolute;
-  font-size: x-large;
-}
-
+/*section location*/
 .location {
   padding: 20px;
   background-color: #eaeaea;
@@ -551,47 +594,6 @@ body {
 
 .card-body__p {
   font-weight: 300;
-}
-
-.heart-empty {
-  cursor: pointer;
-  font-size: x-large;
-}
-
-.heart-empty:hover {
-  font-weight: bold;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
-  background-clip: text;
-  color: transparent;
-  -webkit-animation: color 1s ease forwards;
-          animation: color 1s ease forwards;
-}
-
-.heart-empty:active {
-  font-weight: bold;
-  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
-  background-clip: text;
-  color: transparent;
-  -webkit-animation: color 1s ease forwards;
-          animation: color 1s ease forwards;
-}
-
-@-webkit-keyframes color {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes color {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /*pages menu*/
