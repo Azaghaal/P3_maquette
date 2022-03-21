@@ -99,22 +99,3 @@
 }
 
 
-#page 
-{
-    opacity: 0.1;
-    animation: visibility2 3.1s ease forwards;
-}
-
-@keyframes visibility2 {
-    0% {
-        opacity: 0.8;
-    }
-
-    99% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}

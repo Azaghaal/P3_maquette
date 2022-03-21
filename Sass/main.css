@@ -318,36 +318,6 @@ body {
           animation-delay: 0.8s;
 }
 
-#page {
-  opacity: 0.1;
-  -webkit-animation: visibility2 3.1s ease forwards;
-          animation: visibility2 3.1s ease forwards;
-}
-
-@-webkit-keyframes visibility2 {
-  0% {
-    opacity: 0.8;
-  }
-  99% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes visibility2 {
-  0% {
-    opacity: 0.8;
-  }
-  99% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /*section location*/
 .location {
   padding: 20px;
